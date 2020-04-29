@@ -85,10 +85,6 @@ if (write(sockfd, request, strlen(request)) >= 0) {
     if (fputs(response, stdout) == EOF) {
       printf("fputs error\n");
     }
-
-    // remove trailing chars
-    // ptr = strstr(response, "\r\n\r\n");
-    // printf("%s", ptr);
   }
 }
 }
